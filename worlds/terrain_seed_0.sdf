@@ -1,0 +1,2294 @@
+<?xml version='1.0'?>
+<sdf version='1.9'>
+  <world name='terrain_seed_0'>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/> 
+   <light type='directional' name='sun'>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+      <cast_shadows>true</cast_shadows>
+    </light>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </visual>
+      </link>
+    </model>
+    
+    <model name='obstacle_0'>
+      <static>true</static>
+      <pose>3.4442185152504816 2.5795440294030243 0.184114316166169 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.368228632332338 0.368228632332338 0.368228632332338</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.368228632332338 0.368228632332338 0.368228632332338</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_1'>
+      <static>true</static>
+      <pose>-2.4108324970703663 0.11274721368608542 0.18098682749008285 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.3619736549801657 0.3619736549801657 0.3619736549801657</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.3619736549801657 0.3619736549801657 0.3619736549801657</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_2'>
+      <static>true</static>
+      <pose>2.837985890347726 -1.9668727392107255 0.19531939083047117 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.39063878166094235 0.39063878166094235 0.39063878166094235</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.39063878166094235 0.39063878166094235 0.39063878166094235</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_3'>
+      <static>true</static>
+      <pose>0.8338203945503118 4.081128851953352 0.20093737116347804 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.4018747423269561 0.4018747423269561 0.4018747423269561</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.4018747423269561 0.4018747423269561 0.4018747423269561</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_4'>
+      <static>true</static>
+      <pose>-2.1816215560029617 2.5580420415722394 0.22367379933506631 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.44734759867013263 0.44734759867013263 0.44734759867013263</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.44734759867013263 0.44734759867013263 0.44734759867013263</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_5'>
+      <static>true</static>
+      <pose>-2.4949365863755943 4.097462559682402 0.2965570952075306 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.5931141904150612 0.5931141904150612 0.5931141904150612</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.5931141904150612 0.5931141904150612 0.5931141904150612</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_6'>
+      <static>true</static>
+      <pose>3.102172359965895 4.021659504395828 0.16202951386386652 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.32405902772773304 0.32405902772773304 0.32405902772773304</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.32405902772773304 0.32405902772773304 0.32405902772773304</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_7'>
+      <static>true</static>
+      <pose>2.298317482601286 3.9883828796799357 0.23679678638308824 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.4735935727661765 0.4735935727661765 0.4735935727661765</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.4735935727661765 0.4735935727661765 0.4735935727661765</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_8'>
+      <static>true</static>
+      <pose>-0.2785728454728664 -3.992987919316342 0.18683436709075674 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.3736687341815135 0.3736687341815135 0.3736687341815135</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.3736687341815135 0.3736687341815135 0.3736687341815135</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_9'>
+      <static>true</static>
+      <pose>1.1088697344380165 4.130110532378982 0.2933212735541517 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.5866425471083034 0.5866425471083034 0.5866425471083034</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+	<material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material>
+          <geometry><box><size>0.5866425471083034 0.5866425471083034 0.5866425471083034</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    
+    <model name='bump_0'>
+      <static>true</static>
+      <pose>-0.22990223447282965 3.6530992777164 0.026100556540260444 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04302461551959797</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04302461551959797</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_1'>
+      <static>true</static>
+      <pose>0.4869930383558927 -4.8595829983598104 0.017976470844485372 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0659852343201977</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0659852343201977</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_2'>
+      <static>true</static>
+      <pose>3.2484497714823295 1.6815320123185087 0.01987155732930649 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.030057140965721412</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.030057140965721412</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_3'>
+      <static>true</static>
+      <pose>3.6760277549278086 -2.5608912311286804 0.027409424642173087 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0462602181373695</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0462602181373695</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_4'>
+      <static>true</static>
+      <pose>-3.089329084976095 0.6751074062067186 0.029350805005802866 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04193079643076101</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04193079643076101</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_5'>
+      <static>true</static>
+      <pose>3.0317946927987 -0.5203042856442961 0.016401092093450913 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03402229092762677</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03402229092762677</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_6'>
+      <static>true</static>
+      <pose>0.0794064252057396 4.3283382422690675 0.021025344921811025 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03545289229655518</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03545289229655518</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_7'>
+      <static>true</static>
+      <pose>2.0656140986688962 0.4744091132842376 0.020805672139406477 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0707233431645668</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0707233431645668</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_8'>
+      <static>true</static>
+      <pose>4.638385459738009 1.0318562796138302 0.01889978052551032 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05938085320877182</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05938085320877182</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_9'>
+      <static>true</static>
+      <pose>0.9628686158310629 -1.1509885402733957 0.01580659004805516 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.058782550708244424</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.058782550708244424</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_10'>
+      <static>true</static>
+      <pose>-3.1060867144564384 -3.132704717444449 0.023133187779792577 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.060638658993430336</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.060638658993430336</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_11'>
+      <static>true</static>
+      <pose>-0.2346900799061924 -4.1017563880440635 0.027535407416455493 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06788019609832184</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06788019609832184</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_12'>
+      <static>true</static>
+      <pose>4.233810159462806 3.424602231401824 0.028461648796403533 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07490865606789396</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07490865606789396</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_13'>
+      <static>true</static>
+      <pose>0.4059992494805442 -1.087039497653751 0.015512682426242543 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0652641699927203</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0652641699927203</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_14'>
+      <static>true</static>
+      <pose>3.1162870850787847 3.4948596518636705 0.021796023670623194 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07475194837133375</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07475194837133375</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_15'>
+      <static>true</static>
+      <pose>4.497648732321206 0.796950107456059 0.023204907572447777 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05252815533155776</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05252815533155776</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_16'>
+      <static>true</static>
+      <pose>4.962578393535727 4.169412179474561 0.011647459763932947 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06966625420651121</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06966625420651121</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_17'>
+      <static>true</static>
+      <pose>1.1278310504071225 -0.13555798030833177 0.0269015515134303 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06150736702057364</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06150736702057364</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_18'>
+      <static>true</static>
+      <pose>-2.5696437793814377 2.3148922079084775 0.01440921073735657 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0358567146604259</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0358567146604259</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_19'>
+      <static>true</static>
+      <pose>2.9458297171057595 -1.6746385078034454 0.012012150404321924 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07079565482668299</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07079565482668299</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_20'>
+      <static>true</static>
+      <pose>-3.5364151108769617 1.976706401912388 0.021477320735783338 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03226170339328062</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03226170339328062</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_21'>
+      <static>true</static>
+      <pose>4.100160146990397 0.34197968260723943 0.010533935893244105 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06402945662811282</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06402945662811282</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_22'>
+      <static>true</static>
+      <pose>1.3499990991145827 1.063384177542189 0.017824188186456535 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05879764740157704</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05879764740157704</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_23'>
+      <static>true</static>
+      <pose>-1.298600596648125 4.805166506472688 0.010432730197100481 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03181960188057429</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03181960188057429</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_24'>
+      <static>true</static>
+      <pose>4.610312802396111 -3.150280586025617 0.014211530197732927 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03619475822122158</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03619475822122158</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_25'>
+      <static>true</static>
+      <pose>3.00746590354181 4.369691586445807 0.01851237663933634 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.031139128783432918</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.031139128783432918</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_26'>
+      <static>true</static>
+      <pose>-3.9849978062583027 -2.4008011020716804 0.02293851439670645 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04104146356581587</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04104146356581587</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_27'>
+      <static>true</static>
+      <pose>-1.4970603260346769 -3.1968209847031215 0.010787574141693847 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.055181825260494366</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.055181825260494366</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_28'>
+      <static>true</static>
+      <pose>-3.990787588110334 4.8823514872250104 0.017171106026232036 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03996778952335315</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03996778952335315</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_29'>
+      <static>true</static>
+      <pose>2.315983062253606 3.3832656519341633 0.013388492121949353 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07592410309976658</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07592410309976658</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_30'>
+      <static>true</static>
+      <pose>1.7264056357305257 4.665489030431832 0.023524035685987564 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03290254719132493</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03290254719132493</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_31'>
+      <static>true</static>
+      <pose>3.4542459370161644 -1.5768745892141602 0.02193582786938822 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04253436696425558</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04253436696425558</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_32'>
+      <static>true</static>
+      <pose>-0.5768596630092109 -3.251805155485589 0.01819810791315109 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0535812707548144</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0535812707548144</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_33'>
+      <static>true</static>
+      <pose>0.6911273952428019 0.08600130062633138 0.017143033651805258 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04557230005001034</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04557230005001034</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_34'>
+      <static>true</static>
+      <pose>3.3766117436897893 -2.4906733517786295 0.010248726376586288 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.058030010942676194</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.058030010942676194</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_35'>
+      <static>true</static>
+      <pose>2.4157437741066357 -1.6408344552653942 0.015617663284366964 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03228482467842083</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03228482467842083</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_36'>
+      <static>true</static>
+      <pose>-2.5986959217364602 4.531293398277988 0.015757558297128 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04761127807577537</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04761127807577537</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_37'>
+      <static>true</static>
+      <pose>-1.4079880274625367 4.469058356578911 0.022421536912373342 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06168739261246263</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06168739261246263</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_38'>
+      <static>true</static>
+      <pose>2.1561935030145634 -1.1198276468749437 0.0230166572452669 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05072089941386236</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05072089941386236</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_39'>
+      <static>true</static>
+      <pose>-4.984757781432798 -3.076904587553242 0.014788319203719171 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04672008453312508</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04672008453312508</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_40'>
+      <static>true</static>
+      <pose>1.3739940112930027 -1.2135192967690553 0.021363028418203835 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07377116958565086</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07377116958565086</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_41'>
+      <static>true</static>
+      <pose>-0.855936033163557 -0.9773292488092045 0.018364531065849322 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06509148119668377</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06509148119668377</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_42'>
+      <static>true</static>
+      <pose>1.621958889738174 -4.532203140432017 0.015184538468944454 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05226760948594149</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05226760948594149</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_43'>
+      <static>true</static>
+      <pose>-3.4231342787768915 0.2757313016761467 0.02122809851228854 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.054363280053451604</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.054363280053451604</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_44'>
+      <static>true</static>
+      <pose>2.554847672586825 3.8387515424870085 0.016241164928337458 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.054729133518764336</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.054729133518764336</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_45'>
+      <static>true</static>
+      <pose>-0.331077646474764 3.090458573603623 0.02624829864727518 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07375081657401356</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07375081657401356</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_46'>
+      <static>true</static>
+      <pose>-3.11998705949172 4.994203594553303 0.011669341003514586 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06165443799591502</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06165443799591502</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_47'>
+      <static>true</static>
+      <pose>2.2555435546131246 4.868214802051282 0.023570300104839362 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05009084111062718</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05009084111062718</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_48'>
+      <static>true</static>
+      <pose>-1.8382286277865765 -2.864753379353039 0.010047151294387078 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06586620716555186</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06586620716555186</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_49'>
+      <static>true</static>
+      <pose>3.227314105314157 0.2834597685979281 0.012378077895694917 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03488921709003297</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03488921709003297</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_50'>
+      <static>true</static>
+      <pose>1.4926542489615358 3.7365382390034227 0.029570303735467957 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04399913716634363</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04399913716634363</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_51'>
+      <static>true</static>
+      <pose>-3.9981931093629095 3.5393810959733827 0.011626908335364682 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04983480886654522</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04983480886654522</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_52'>
+      <static>true</static>
+      <pose>-2.252861565807379 -0.47021815182085724 0.02722719807274472 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06961707655928262</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06961707655928262</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_53'>
+      <static>true</static>
+      <pose>-3.6657944579745094 0.20865528414198842 0.01694106029199203 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06253916190748687</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06253916190748687</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_54'>
+      <static>true</static>
+      <pose>3.7186383571058617 -2.2159018478363945 0.010813265473505218 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.030928716377279758</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.030928716377279758</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_55'>
+      <static>true</static>
+      <pose>1.8099677011124324 0.5835573609704694 0.02876877599469837 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07732512770849981</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07732512770849981</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_56'>
+      <static>true</static>
+      <pose>4.098511774051024 -4.579954680326588 0.024026496351897193 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06745674116954316</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06745674116954316</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_57'>
+      <static>true</static>
+      <pose>1.5536186467472959 2.1235765251624175 0.02280282399586448 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07513550753096654</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07513550753096654</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_58'>
+      <static>true</static>
+      <pose>-1.27550737027744 0.3792878373182056 0.021742510093902868 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04039220518454124</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04039220518454124</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_59'>
+      <static>true</static>
+      <pose>-4.911029179509212 -3.489768261360122 0.02579246317851565 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.046670419401493315</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.046670419401493315</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_60'>
+      <static>true</static>
+      <pose>2.1849942277153955 -1.6174402997332136 0.010824058990124185 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06102690541582759</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06102690541582759</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_61'>
+      <static>true</static>
+      <pose>-3.3613945432442405 4.819140701253055 0.01789583965976581 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.044476542681793345</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.044476542681793345</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_62'>
+      <static>true</static>
+      <pose>0.4848429657251341 -2.065929985426634 0.014794121672772477 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05390323345755105</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05390323345755105</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_63'>
+      <static>true</static>
+      <pose>-4.517436377117056 -3.2041315095844434 0.01141725768188695 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05615251158500491</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05615251158500491</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_64'>
+      <static>true</static>
+      <pose>-0.968308535549065 -1.714792899845131 0.01198800676477402 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05073608044857212</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05073608044857212</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_65'>
+      <static>true</static>
+      <pose>4.086575543967806 -0.25995348862703604 0.02952458915298114 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07204241663138358</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07204241663138358</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_66'>
+      <static>true</static>
+      <pose>-1.5634840634223224 -0.20913480848013943 0.018530706470880565 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06497976455753093</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06497976455753093</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_67'>
+      <static>true</static>
+      <pose>-1.9809688378064405 2.347509912186152 0.028393776888632198 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07471998891072873</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07471998891072873</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_68'>
+      <static>true</static>
+      <pose>1.2674204680686731 -1.2442865367145473 0.022777570350009463 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07872802607398471</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07872802607398471</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_69'>
+      <static>true</static>
+      <pose>-4.34165322722699 -4.153304308798889 0.011223123130919322 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0674934785891543</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0674934785891543</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_70'>
+      <static>true</static>
+      <pose>-4.9214899466874815 -1.0619204821829054 0.01897088571193109 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05595018643506647</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05595018643506647</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_71'>
+      <static>true</static>
+      <pose>-0.11381195572847425 0.8488870199327438 0.018460761470148447 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06396512836860624</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06396512836860624</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_72'>
+      <static>true</static>
+      <pose>-1.3166854366557414 4.884590580992894 0.02554200309017019 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04304582677231281</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04304582677231281</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_73'>
+      <static>true</static>
+      <pose>-0.6877897536795583 -1.4147961799046103 0.027271578886040843 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.033192897447191436</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.033192897447191436</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_74'>
+      <static>true</static>
+      <pose>2.0200414976193715 4.030107075409271 0.023538419336332068 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05258058963434338</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05258058963434338</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_75'>
+      <static>true</static>
+      <pose>-3.8108971344614426 -1.0204639839768657 0.01084202855781324 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04036159867085414</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04036159867085414</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_76'>
+      <static>true</static>
+      <pose>4.4796135125631995 -2.8410563153464286 0.013959400871158843 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.037317724490400286</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.037317724490400286</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_77'>
+      <static>true</static>
+      <pose>-1.2196803568570247 0.46391262315113657 0.02977379777971513 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03756671842364455</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03756671842364455</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_78'>
+      <static>true</static>
+      <pose>4.829892105452821 -3.5159798291397015 0.02359858966220004 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05029534415839744</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05029534415839744</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_79'>
+      <static>true</static>
+      <pose>3.776565829010952 -0.04594075088811245 0.016449206297626123 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07585233363799077</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07585233363799077</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_80'>
+      <static>true</static>
+      <pose>-0.015591085092497181 -0.013534081349910743 0.014039826175989072 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06350340756576471</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06350340756576471</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_81'>
+      <static>true</static>
+      <pose>1.0977061041678038 -2.8122690312784426 0.029251329265093634 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0470110157525516</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0470110157525516</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_82'>
+      <static>true</static>
+      <pose>3.9900803803100757 3.1811838091779414 0.012967337649238596 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03177341309380061</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03177341309380061</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_83'>
+      <static>true</static>
+      <pose>-2.431180879280962 2.8416656818915422 0.021658963604924426 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07211666635386836</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07211666635386836</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_84'>
+      <static>true</static>
+      <pose>2.181316517768294 3.0705537997507584 0.011692862736661402 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03331795655188926</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03331795655188926</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_85'>
+      <static>true</static>
+      <pose>3.6889531400437843 -4.605841706219712 0.010812640532918019 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0412545326838248</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0412545326838248</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_86'>
+      <static>true</static>
+      <pose>-4.847148600302732 3.4395468569240784 0.013213801205254411 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04652971836250401</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04652971836250401</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_87'>
+      <static>true</static>
+      <pose>-3.511805097110905 1.5608366177033695 0.020099993852113564 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07842991358463536</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07842991358463536</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_88'>
+      <static>true</static>
+      <pose>4.010904768840049 0.024285989524274854 0.02357142713578718 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.058693623874577466</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.058693623874577466</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_89'>
+      <static>true</static>
+      <pose>3.051099890321371 2.5784638226138252 0.024939307783002653 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07952662813527811</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07952662813527811</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_90'>
+      <static>true</static>
+      <pose>4.0578072335286635 -2.938951679344167 0.02197228527334938 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05677081521642905</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05677081521642905</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_91'>
+      <static>true</static>
+      <pose>3.2569661716035387 -0.17786436934083838 0.017771377803002284 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06955201058545478</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06955201058545478</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_92'>
+      <static>true</static>
+      <pose>0.8638845558144954 3.5131660748106786 0.023139691037722683 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06990297355520791</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06990297355520791</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_93'>
+      <static>true</static>
+      <pose>-4.997593034748331 -3.180310778137889 0.015089187969667586 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.055342889342556385</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.055342889342556385</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_94'>
+      <static>true</static>
+      <pose>-4.343791567272692 3.5988342212146165 0.016056097562980674 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07714735106565815</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07714735106565815</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_95'>
+      <static>true</static>
+      <pose>-0.9192683261513928 3.100375338172869 0.022819697251249 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.033112937943561155</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.033112937943561155</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_96'>
+      <static>true</static>
+      <pose>-3.7267918706721295 -2.129116600047748 0.011110540917793229 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0714970343314203</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0714970343314203</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_97'>
+      <static>true</static>
+      <pose>-4.640661665698111 -0.8213395520370543 0.027266503662164016 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0545915479548132</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0545915479548132</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_98'>
+      <static>true</static>
+      <pose>2.1718874634518945 1.7354380859953462 0.029734118484373663 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03756868861998934</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03756868861998934</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_99'>
+      <static>true</static>
+      <pose>-0.8885980371251865 1.1177086432485996 0.010940658316236808 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.049334150276661784</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.049334150276661784</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_100'>
+      <static>true</static>
+      <pose>-0.29110790951934806 -3.4863224610516372 0.022348008473620107 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0316232731186972</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0316232731186972</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_101'>
+      <static>true</static>
+      <pose>1.299662912183356 -3.947071753436351 0.016933359532799366 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05745718831158886</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05745718831158886</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_102'>
+      <static>true</static>
+      <pose>-1.165859268351126 2.7641989869967833 0.027625532308244827 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05451598387621229</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05451598387621229</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_103'>
+      <static>true</static>
+      <pose>1.1011974290622337 -0.3281158496192971 0.01675730759657505 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.061615632002769226</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.061615632002769226</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_104'>
+      <static>true</static>
+      <pose>-3.756762074717476 1.8252961869252378 0.02577132982747727 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06110187213733285</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06110187213733285</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_105'>
+      <static>true</static>
+      <pose>-3.728908750528912 4.117833181295222 0.028337748161820185 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0699670605710907</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0699670605710907</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_106'>
+      <static>true</static>
+      <pose>3.7253472177346687 1.81006446357057 0.020380146184628037 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07051254247186794</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07051254247186794</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_107'>
+      <static>true</static>
+      <pose>2.854891493606652 -3.1087253214281496 0.018891592081126812 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06910570531786471</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06910570531786471</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_108'>
+      <static>true</static>
+      <pose>2.5661622129736505 -0.4452976318781223 0.011506791704371204 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06947793641388916</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06947793641388916</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_109'>
+      <static>true</static>
+      <pose>-4.553590945755875 4.342895823715677 0.02802142799297809 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.054308255037436755</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.054308255037436755</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_110'>
+      <static>true</static>
+      <pose>4.447832518820702 1.6651115245563357 0.014319587682136183 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.058589841304673734</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.058589841304673734</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_111'>
+      <static>true</static>
+      <pose>-4.065237807009918 3.193942150822732 0.025587914213897712 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07443860338159938</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07443860338159938</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_112'>
+      <static>true</static>
+      <pose>1.9850243273162498 -0.7988888392517923 0.012268897912754179 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04526557950134782</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04526557950134782</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_113'>
+      <static>true</static>
+      <pose>-0.7402975192783696 0.660129742477574 0.02871509538661906 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07614402915687563</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07614402915687563</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_114'>
+      <static>true</static>
+      <pose>-0.8435880345908684 -4.007890119019043 0.024685586833142315 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06869093662357217</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06869093662357217</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_115'>
+      <static>true</static>
+      <pose>-4.692991540480938 -0.5328140086616351 0.010602684691045399 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0643209052149279</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0643209052149279</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_116'>
+      <static>true</static>
+      <pose>4.192823534016137 4.6224248651041915 0.011570770793036075 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.066127138604442</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.066127138604442</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_117'>
+      <static>true</static>
+      <pose>-4.296705341236443 -1.407466851787631 0.01695755454568679 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03146887538784932</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03146887538784932</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_118'>
+      <static>true</static>
+      <pose>-4.9003575868703395 4.743235128409678 0.011410352229563747 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07095033495344313</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07095033495344313</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_119'>
+      <static>true</static>
+      <pose>3.9343509184786036 -2.9202195999598435 0.02347518291057668 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0402395399134675</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0402395399134675</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_120'>
+      <static>true</static>
+      <pose>4.382622681625481 -3.768118787707626 0.017382602943400514 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03035922836261352</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03035922836261352</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_121'>
+      <static>true</static>
+      <pose>-4.7534998556384425 1.0484823758053103 0.013739834048457154 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07295878043096043</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07295878043096043</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_122'>
+      <static>true</static>
+      <pose>-3.8760896416981594 -1.5555039266138913 0.012603153888573682 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07795857603036568</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07795857603036568</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_123'>
+      <static>true</static>
+      <pose>4.665192604669938 -1.3776013005515075 0.01585263971929947 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.053668520138005577</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.053668520138005577</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_124'>
+      <static>true</static>
+      <pose>4.3712684421546975 4.581478949874976 0.013680911003503111 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.061795785325387174</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.061795785325387174</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_125'>
+      <static>true</static>
+      <pose>4.929517886102872 -3.9741956045308804 0.013128061201660175 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05904246907970402</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05904246907970402</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_126'>
+      <static>true</static>
+      <pose>3.9767531415020567 4.4567839149561514 0.016317828373362486 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.07021951490000539</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.07021951490000539</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_127'>
+      <static>true</static>
+      <pose>-2.571613100420148 2.5485841321903777 0.018395707557081503 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0445529759572677</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0445529759572677</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_128'>
+      <static>true</static>
+      <pose>-4.537443230973587 -3.6776618956619345 0.011558422401870716 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.031027481032088834</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.031027481032088834</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_129'>
+      <static>true</static>
+      <pose>-4.267888506351392 -0.797682978258532 0.02481757639741844 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.05753885888187189</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.05753885888187189</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_130'>
+      <static>true</static>
+      <pose>-3.57716526157584 -0.7781125383058116 0.011691113896378651 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06184830187058602</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06184830187058602</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_131'>
+      <static>true</static>
+      <pose>-0.5518884485379614 -1.3074396076020225 0.011157142278020345 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0774465964470831</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0774465964470831</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_132'>
+      <static>true</static>
+      <pose>-0.9137377881685191 -0.8277452020379492 0.016413420057490077 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0664090252299839</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0664090252299839</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_133'>
+      <static>true</static>
+      <pose>-2.96009724053766 -2.066883448336949 0.02900536659143242 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.053544377122467936</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.053544377122467936</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_134'>
+      <static>true</static>
+      <pose>2.965170227633064 -2.2302975422025675 0.023764006071370664 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.057909079419652315</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.057909079419652315</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_135'>
+      <static>true</static>
+      <pose>2.9565715568213227 -0.5383561605015244 0.025352814856425567 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0499388452564853</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0499388452564853</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_136'>
+      <static>true</static>
+      <pose>-0.6828350443588791 -2.520423311029949 0.02874209292580912 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.052672351576532384</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.052672351576532384</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_137'>
+      <static>true</static>
+      <pose>-3.574325117813987 -0.37564645472787905 0.019665759765362004 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06186517621818907</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06186517621818907</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_138'>
+      <static>true</static>
+      <pose>-2.9636009562963004 -4.981568393843341 0.02237471036046905 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06494958559017194</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06494958559017194</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_139'>
+      <static>true</static>
+      <pose>-4.922233505641358 -2.014398789818792 0.02257840757089242 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06843171297714207</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06843171297714207</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_140'>
+      <static>true</static>
+      <pose>0.4520811594397225 -3.437788901909511 0.01942869843431607 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.06531470214998442</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.06531470214998442</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_141'>
+      <static>true</static>
+      <pose>1.7817874623596364 2.6008983672349215 0.025239900261954232 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04161813607206226</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04161813607206226</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_142'>
+      <static>true</static>
+      <pose>-2.1991161531161074 4.840151371182454 0.027674360374881128 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03604158053922593</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03604158053922593</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_143'>
+      <static>true</static>
+      <pose>-4.594528749566287 -2.4342418165185595 0.02163232366889189 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.056305095438123426</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.056305095438123426</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_144'>
+      <static>true</static>
+      <pose>-1.0376501497190782 -3.9796827177292893 0.015667930077209773 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.042630404291235664</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.042630404291235664</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_145'>
+      <static>true</static>
+      <pose>2.5522285455873153 4.08774325222007 0.01070901931382055 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.059770495774320975</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.059770495774320975</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_146'>
+      <static>true</static>
+      <pose>2.9223647164171034 -1.9439606716008004 0.020603708752908293 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.04699452032081217</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.04699452032081217</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_147'>
+      <static>true</static>
+      <pose>-2.5095295242444493 4.199780878573696 0.018296608010074655 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.03817773791704064</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.03817773791704064</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_148'>
+      <static>true</static>
+      <pose>-2.1030805049279424 0.19834102201614634 0.02254279378209685 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.058699090154118824</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.058699090154118824</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='bump_149'>
+      <static>true</static>
+      <pose>0.3137580383797278 -0.8919549766440049 0.01806825753173635 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><sphere><radius>0.0617297006188233</radius></sphere></geometry>
+        </collision>
+        <visual name='visual'>
+	 <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.6 0.4 0.2 1</diffuse></material>
+          <geometry><sphere><radius>0.0617297006188233</radius></sphere></geometry>
+        </visual>
+      </link>
+    </model>
+
+    
+    <model name='goal_marker'>
+      <static>true</static>
+      <pose>4.5 0 0.05 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>0.1</length></cylinder></geometry>
+          <material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    
+    <model name='start_marker'>
+      <static>true</static>
+      <pose>-4.5 0 0.05 0 0 0</pose>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry><cylinder><radius>0.15</radius><length>0.1</length></cylinder></geometry>
+          <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

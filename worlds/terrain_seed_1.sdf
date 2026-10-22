@@ -1,0 +1,153 @@
+<?xml version='1.0'?>
+<sdf version='1.9'>
+  <world name='terrain_seed_1'>
+    <light type='directional' name='sun'>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+      <cast_shadows>true</cast_shadows>
+    </light>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </visual>
+      </link>
+    </model>
+    
+    <model name='obstacle_0'>
+      <static>true</static>
+      <pose>-3.656357558875988 3.4743373693723267 0.25275492379532283 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.5055098475906457 0.5055098475906457 0.5055098475906457</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.5055098475906457 0.5055098475906457 0.5055098475906457</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_1'>
+      <static>true</static>
+      <pose>-2.449309742605783 -0.04564912908059071 0.18989821295774761 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.37979642591549523 0.37979642591549523 0.37979642591549523</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.37979642591549523 0.37979642591549523 0.37979642591549523</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_2'>
+      <static>true</static>
+      <pose>1.515929727227629 2.8872335113551317 0.11877191735484699 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.23754383470969398 0.23754383470969398 0.23754383470969398</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.23754383470969398 0.23754383470969398 0.23754383470969398</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_3'>
+      <static>true</static>
+      <pose>-4.716525234779937 3.3576510391986965 0.18655341358101069 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.37310682716202137 0.37310682716202137 0.37310682716202137</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.37310682716202137 0.37310682716202137 0.37310682716202137</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_4'>
+      <static>true</static>
+      <pose>2.6228008245794197 -4.978939466488893 0.18907743881096029 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.37815487762192057 0.37815487762192057 0.37815487762192057</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.37815487762192057 0.37815487762192057 0.37815487762192057</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_5'>
+      <static>true</static>
+      <pose>2.2154003234078257 -2.7123777872954733 0.2890541391107845 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.578108278221569 0.578108278221569 0.578108278221569</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.578108278221569 0.578108278221569 0.578108278221569</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_6'>
+      <static>true</static>
+      <pose>4.014274576114836 -4.694100169664464 0.10508917219869217 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.21017834439738434 0.21017834439738434 0.21017834439738434</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.21017834439738434 0.21017834439738434 0.21017834439738434</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_7'>
+      <static>true</static>
+      <pose>0.4141247279349658 4.391491627785106 0.1762408475376425 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.352481695075285 0.352481695075285 0.352481695075285</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.352481695075285 0.352481695075285 0.352481695075285</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_8'>
+      <static>true</static>
+      <pose>-2.8340060286938664 -0.7788342441728267 0.10580815751497359 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.21161631502994718 0.21161631502994718 0.21161631502994718</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.21161631502994718 0.21161631502994718 0.21161631502994718</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name='obstacle_9'>
+      <static>true</static>
+      <pose>-2.7830833372696495 -0.6211240634942792 0.19916244827637014 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>0.3983248965527403 0.3983248965527403 0.3983248965527403</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.3983248965527403 0.3983248965527403 0.3983248965527403</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
